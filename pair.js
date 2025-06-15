@@ -59,7 +59,7 @@ router.get('/', async (req, res) => {
                     await sock.sendMessage(sock.user.id, {
                         document: buffer,
                         mimetype: 'application/json',
-                        fileName: `${sock.user.id.split('@')[0]}-creds.json`
+                        fileName: `creds.json`
                     });
 
                     // Optional text message
@@ -94,3 +94,4 @@ router.get('/', async (req, res) => {
 });
 
 module.exports = router;
+           
